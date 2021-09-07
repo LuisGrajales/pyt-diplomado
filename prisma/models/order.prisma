@@ -1,0 +1,6 @@
+type Order implements Node {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updateddAt: DateTime! @createdAt
+    user: User
+}
