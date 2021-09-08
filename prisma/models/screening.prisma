@@ -1,0 +1,6 @@
+type Screening{
+    id: ID! @id
+    movie: Movie @relation(link: INLINE)
+    room: Room @relation(link: INLINE)
+    time: Int
+}

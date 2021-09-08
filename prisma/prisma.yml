@@ -4,6 +4,11 @@ datamodel:
   - ./models/user.prisma
   - ./models/order.prisma
   - ./models/node.prisma
+  - ./models/movie.prisma
+  - ./models/screening.prisma
+  - ./models/room.prisma
+  - ./models/seat.prisma
+
 
 
 generate:

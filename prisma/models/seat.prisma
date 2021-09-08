@@ -1,0 +1,6 @@
+type Seat{ 
+    id: ID! @id
+    row: String
+    number: Int
+    room: Room @relation(link: INLINE)
+}
