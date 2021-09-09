@@ -1,0 +1,5 @@
+type Ticket {
+    id: ID! @id
+    seat: Seat! @relation(link: INLINE) 
+    screening: Screening! @relation(link: INLINE)
+}
