@@ -8,6 +8,7 @@ datamodel:
   - ./models/screening.prisma
   - ./models/room.prisma
   - ./models/seat.prisma
+  - ./models/ticket.prisma
 
 
 

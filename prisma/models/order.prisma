@@ -1,6 +1,11 @@
-type Order implements Node {
+type Order {
   id: ID! @id
-  createdAt: DateTime! @createdAt
-  updateddAt: DateTime! @createdAt
-  user: User @relation(link: INLINE)
+  ticket: Ticket! @relation(link: INLINE)
+  type: OrderType!
+  user: User! @relation(link: INLINE)
+}
+
+enum OrderType{
+  ONSITE
+  ONLINE
 }

@@ -1,5 +1,5 @@
 type Room{
     id: ID! @id
-    number: Int
-    seats: Int
+    number: Int!
+    seats: Int!
 }

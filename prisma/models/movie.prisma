@@ -1,9 +1,9 @@
 type Movie{
     id: ID! @id
-    name: String
-    lenght: Float
-    year: Int
-    country: String
-    genre: String
-    rating: String
+    name: String!
+    lenght: Float!
+    year: Int!
+    country: String!
+    genre: String!
+    rating: String!
 }
