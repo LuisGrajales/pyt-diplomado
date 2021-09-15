@@ -9,7 +9,7 @@ export default {
     const password = await bcrypt.hash(pwd, 10);
     return await ctx.prisma.updateUser({ data: { password }, where: { token }});
   },
-  updateUser: (parent, args: { data: any, where: any }, ctx: Context) => ctx.prisma.updateUser(args),
+  updateUser: (parent, args: { data: any, where: any }, ctx: Context) => ctx.prisma.updateUser(args.data),
   createUser: (parent, { data }: { data: UserCreateInput}, ctx: Context) => {
     const token = randomstring.generate(8).toUpperCase();
     data = {
@@ -18,4 +18,5 @@ export default {
     };
     return ctx.prisma.createUser(data);
   },
+  deleteUser: (parent, args: { data: any, where: any }, ctx: Context) => ctx.prisma.deleteUser(args.data),
 };
