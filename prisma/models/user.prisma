@@ -6,4 +6,5 @@ type User{
   name: String!
   membership: Boolean
   points: Float
+  token: String! @unique
 }
