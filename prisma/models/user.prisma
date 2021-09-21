@@ -6,5 +6,6 @@ type User{
   name: String!
   membership: Boolean
   points: Float
-  token: String! @unique
+  token: String @unique
+  orders: [Order!]! @relation(name: "OrderUser")
 }

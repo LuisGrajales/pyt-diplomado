@@ -2,7 +2,7 @@ type Order {
   id: ID! @id
   ticket: [Ticket!]! @relation(name: "OrderTicket", link: INLINE)
   type: OrderType!
-  user: User! @relation(link: INLINE)
+  user: User! @relation(name: "OrderUser", link: INLINE)
 }
 
 enum OrderType{
